@@ -1,0 +1,102 @@
+.header {
+  display: flex;
+  flex-direction: column;
+}
+.header .header_Top {
+  height: 60px;
+  background: #000;
+  display: flex;
+  align-items: center;
+  position: static;
+  top: 0;
+  z-index: 1000;
+}
+.header .header_left_navbar {
+  margin-left: 10px;
+  padding: 5px 5px 2px 5px;
+  color: #fff;
+  border: 1px solid #555;
+}
+.header .logo {
+  width: 100px;
+  margin: 18px 20px 0 20px;
+  object-fit: cover;
+}
+.header .headerSearch {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  border-radius: 25px;
+}
+.header .headerSearch .headerSearch_input {
+  height: 37px;
+  padding: 10px;
+  width: 100%;
+}
+.headerSearchIcon {
+  background-color: #cd9042;
+  padding-inline-start: 3px;
+  height: 37px !important;
+}
+.headerNavbar,
+.headerNavbar span {
+  display: flex;
+  justify-content: center;
+}
+.headerNavbar .headerLink {
+  width: 130px;
+}
+.headerLink {
+  color: #fff;
+  text-decoration: none;
+}
+.headerNavbar .headerOptions,
+.headerAddress .headerOptions {
+  display: flex;
+  flex-direction: column;
+  margin: 0 10px;
+  height: 5vh;
+}
+.headerNavbar .headerOptions .headerOption_one,
+.headerAddress .headerOption_one {
+  font-size: 12px;
+}
+.headerNavbar .headerOptions .headerOption_two,
+.headerAddress .headerOption_two {
+  font-size: 14px;
+  font-weight: 800;
+}
+/* Basket */
+.header .headerOption_Basket {
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+.header .headerOption_Basket .basketCount {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.headerBottom {
+  background-color: #000;
+  padding-top: 5px;
+  height: 40px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+.headerAddress {
+  display: flex;
+}
+.headerAddressIcon {
+  vertical-align: middle;
+}
+.headerBottom_Navbar {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+.headerBottom_Navbar > span {
+  font-size: 14px;
+  font-weight: 600;
+  margin-left: 10px;
+}
