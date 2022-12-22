@@ -33,7 +33,17 @@ function reducer(state, action) {
 
     case "REMOVE_FORM_BASKET":
       //lOGIC for adding items to basket
-      return { state };
+      let newBasket = [...state.basket];
+      const index = state.basket.findIndex(
+        basketItem => basketItem.id === action.id
+      );
+      if (index >= 0) {
+        // ItemExist in basket , remove it
+        newBasket.splice(index, 1);
+      } else {
+        console.warn(`Can't remove product ${action.id} as it's not`);
+      }
+      return { ...state, basket: newBasket };
     default:
       return state;
   }
